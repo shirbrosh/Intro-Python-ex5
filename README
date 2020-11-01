@@ -1,0 +1,44 @@
+shir_brosh
+316124767
+Shir Brosh
+
+I discussed the exercise with: Ortal Glatt, Yair Shemer, Gadi Fleischer, Daniel Shookroun.
+
+=============================
+=  README for ex4:   =
+=============================
+check_input_args, read_wordlist_file, read_matrix_file, count_word_in_matrix, direction_r,
+direction_l, direction_d, direction_u, turn_matrix_diagonal_down, direction_y,
+direction_x, matrix_up_side_down, direction_w, direction_z, create_dictionary,
+word_in_matrix_dictionary, find_words_in_matrix, write_output_file, main_game,
+check_count_word_in_matrix.
+
+
+==================
+=  Description: =
+==================
+I divided the project to function this way:
+the first 3 functions - check_input_args, read_wordlist_file and read_matrix_file i did as
+asked and did not divide them.
+the next function- find_words_in_matrix i divided to the following function:
+    count_word_in_matrix- that counts how many times a word appear in a string.
+    turn_matrix_diagonal_down- that takes every diagonal in the matrix and turns it into a row.
+    matrix_up_side_down- that turns the orders of the matrix rows- the first row will be the
+    last and so on.
+    direction_r, direction_l, direction_d, direction_u, direction_y, direction_x, direction_w,
+    direction_z- all those functions search for words in the matrix in the direction of their name
+    using the functions above.
+    create_dictionary- that create a dictionary containing all the words in the list each word
+    points to the value 0.
+    word_in_matrix_dictionary- that creates a list of all the words that appeared in the matrix.
+    using all those functions i built the function find_words_in_matrix.
+the function write_output_file i did as asked, and the main function which i called main_game.
+
+check_count_word_in_matrix- A function that tests the function count_word_in_matrix from
+    wordsearch- checks 3 different inputs and return True if the function works and False
+    otherwise.
+    the inputs- ("bee", "ebbeeb", counter)- the word appears only once and and the same
+                letters appears many times in the string.
+                ("dad", "dadadad", counter)- the word appears 3 times in the string.
+                ("pepper", "ppepperppepper", counter)- the word appears 2 times and and the
+                same letters appears many times in the string.
